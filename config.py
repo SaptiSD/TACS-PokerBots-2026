@@ -2,7 +2,7 @@
 # DO NOT REMOVE OR RENAME THIS FILE
 PLAYER_1_NAME = "ChampionBot"
 # Point each player path at a Python bot directory with commands.json
-PLAYER_1_PATH = "./python_skeleton"
+PLAYER_1_PATH = "./SaptiBot"
 # NO TRAILING SLASHES ARE ALLOWED IN PATHS
 PLAYER_2_NAME = "Maniac"
 PLAYER_2_PATH = "./test_bots/maniac_bot"

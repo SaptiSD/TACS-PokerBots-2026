@@ -4,7 +4,7 @@ Baseline bot: passive check/call style with conservative folds.
 import os
 import sys
 
-sys.path.append(os.path.join(os.path.dirname(__file__), "..", "python_skeleton"))
+sys.path.append(os.path.join(os.path.dirname(__file__), "..", "SaptiBot"))
 
 from skeleton.actions import CallAction, CheckAction, FoldAction, RedrawAction
 from skeleton.bot import Bot
