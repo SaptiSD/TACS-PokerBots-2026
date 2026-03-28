@@ -290,7 +290,9 @@ class Player(Bot):
             min_r, max_r = round_state.raise_bounds()
 
         pot_odds   = cost / (pot + 1e-9)
-        can_redraw = RedrawAction in legal
+        # Engine allows only ONE redraw per hand total. If opponent already redrawed, we can't.
+        opp_redrawed = round_state.redraws_used[1 - active]
+        can_redraw = RedrawAction in legal and not opp_redrawed
 
         # -------------------------------------------------------------------
         # Preflop
