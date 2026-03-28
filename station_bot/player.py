@@ -2,7 +2,7 @@ import os
 import sys
 import random
 
-sys.path.append(os.path.join(os.path.dirname(__file__), "..", "..", "SaptiBot"))
+sys.path.append(os.path.join(os.path.dirname(__file__), "..", "SaptiBot"))
 
 from skeleton.actions import CallAction, CheckAction, FoldAction, RedrawAction
 from skeleton.bot import Bot
