@@ -502,58 +502,75 @@ class Player(Bot):
         """Core betting logic based on win rate and pot odds."""
         street = round_state.street
 
-        # Pot odds calculation
-        if continue_cost > 0:
-            pot_odds = continue_cost / (pot + continue_cost)
-        else:
-            pot_odds = 0.0
-
         # ─── PREFLOP STRATEGY ────────────────────────────────────────
         if street == 0:
             return self._preflop_action(round_state, active, legal_actions,
                                         win_rate, continue_cost, pot)
 
+        # ─── IMPLIED ODDS & POT ODDS ─────────────────────────────────
+        if continue_cost > 0:
+            # If drawing on Flop/Turn, opponent likely pays us off if we hit.
+            # Estimate future expected value (1.2x current pot)
+            if street in (3, 4) and win_rate < 0.40:
+                expected_future_value = min(pot * 1.2, my_stack - continue_cost)
+            else:
+                expected_future_value = 0
+            
+            implied_pot = pot + continue_cost + expected_future_value
+            pot_odds = continue_cost / max(1, implied_pot)
+        else:
+            pot_odds = 0.0
+
         # ─── POST-FLOP STRATEGY ──────────────────────────────────────
 
-        # FOLD: when hand is too weak relative to the cost
-        if continue_cost > 0 and win_rate < pot_odds * 0.85:
-            # Also consider implied odds / bluff catching
-            if win_rate < 0.25 or continue_cost > my_stack * 0.3:
-                if FoldAction in legal_actions:
-                    return FoldAction()
+        # FOLD & EQUILIBRIUM DEFENSE
+        if continue_cost > 0:
+            # MDF (Minimum Defense Frequency) Mixed Strategy on River against big bets
+            if street == 5 and self.opp_model.hands_played > 10:
+                mdf = pot / max(1, pot + continue_cost)
+                # If hand is a bluff-catcher (moderate win rate), RNG call at MDF to prevent auto-profit bluffs
+                if 0.30 <= win_rate < 0.65:
+                    if random.random() < mdf * (win_rate / 0.5):
+                        if CallAction in legal_actions:
+                            return CallAction()
+                    else:
+                        if FoldAction in legal_actions:
+                            return FoldAction()
+
+            # Deep Exploitative Fold Adj: Nits rarely bluff. Fold faster to aggression.
+            if self.opp_model.is_tight() and not self.opp_model.is_aggressive() and self.opp_model.hands_played > 15:
+                fold_threshold = pot_odds * 1.15
+            else:
+                fold_threshold = pot_odds * 0.85
+
+            if win_rate < fold_threshold:
+                if win_rate < 0.25 or continue_cost > my_stack * 0.3:
+                    if FoldAction in legal_actions:
+                        return FoldAction()
 
         # CHECK: when we can check and hand is marginal
         if continue_cost == 0 and CheckAction in legal_actions:
-            # With weak hands, check
             if win_rate < 0.40:
-                # Occasionally check-raise bluff against aggressive opponents
-                if (self.opp_model.is_aggressive() and
-                    win_rate > 0.30 and random.random() < 0.08):
-                    pass  # Fall through to raise logic
-                else:
-                    return CheckAction()
+                # Trap maniacs
+                if self.opp_model.is_aggressive() and win_rate > 0.30 and random.random() < 0.35:
+                    return CheckAction()  # let them bet into us
+                return CheckAction()
 
-            # Medium hands — mix between check and bet
             if win_rate < 0.55:
-                if random.random() < 0.55:  # Check more often with medium hands
+                if random.random() < 0.55:
                     return CheckAction()
-                # Fall through to raise
 
         # RAISE / BET: with strong hands or as bluff
         if RaiseAction in legal_actions:
             should_raise = False
-
+            
             if win_rate > 0.60:
-                # Value raise
                 should_raise = True
             elif win_rate > 0.50 and continue_cost == 0:
-                # Continuation bet / probe with decent hands
                 should_raise = random.random() < 0.60
             elif win_rate > 0.35 and self.opp_model.folds_to_pressure():
-                # Semi-bluff against foldy opponents
                 should_raise = random.random() < 0.35
             elif win_rate < 0.25 and continue_cost == 0 and random.random() < 0.12:
-                # Pure bluff (rare)
                 should_raise = True
 
             if should_raise:
@@ -564,12 +581,9 @@ class Player(Bot):
         if CallAction in legal_actions:
             if win_rate >= pot_odds * 0.9:
                 return CallAction()
-            # Call small bets with drawing hands
             if continue_cost <= 10 and win_rate > 0.30:
                 return CallAction()
-            # Adjust for opponent tendencies
             if self.opp_model.is_aggressive() and win_rate > pot_odds * 0.7:
-                # Call down aggressive opponents more
                 return CallAction()
 
         # DEFAULT: check if possible, fold otherwise
@@ -581,8 +595,19 @@ class Player(Bot):
 
     def _preflop_action(self, round_state, active, legal_actions,
                          hand_strength, continue_cost, pot):
-        """Preflop-specific strategy."""
+        """Preflop-specific strategy with dynamic range narrowing."""
         min_raise, max_raise = round_state.raise_bounds() if RaiseAction in legal_actions else (0, 0)
+
+        # Preflop Range Narrowing vs Raises
+        if continue_cost > BIG_BLIND and self.opp_model.hands_played >= 10:
+            pfr_factor = max(0.05, self.opp_model.pfr)
+            if pfr_factor <= 0.20:
+                # Opponent is tight preflop, discount our hand strength
+                discount = 0.75 + pfr_factor
+                hand_strength *= discount
+            elif pfr_factor >= 0.45:
+                # Opponent is very loose with preflop raises, slightly boost our calling range
+                hand_strength = min(0.95, hand_strength * 1.05)
 
         # Premium hands (top 15%) — raise/3-bet
         if hand_strength > 0.82:
