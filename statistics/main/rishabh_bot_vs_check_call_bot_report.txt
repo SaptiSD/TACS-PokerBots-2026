@@ -1,0 +1,19 @@
+============================================================
+  MATCHUP: rishabh_bot  vs  check_call_bot
+  Date: 2026-03-28 15:12:08
+============================================================
+
+  Hands played      : 1000
+  Winner            : rishabh_bot
+
+  rishabh_bot            | check_call_bot
+  --------------------------------------------------
+  Total chips       : +6967  |  -6967
+  Hands won         : 490  |  486  (ties: 24)
+  Win rate          : 49.0%  |  48.6%
+  Avg chips/hand    : +6.97  |  -6.97
+  Biggest single win: 250  |  250
+  Best win streak   : 8 hands
+  Worst loss streak : 9 hands
+  Redraws used      : 318  |  642
+

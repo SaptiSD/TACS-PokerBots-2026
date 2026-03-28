@@ -1,0 +1,19 @@
+============================================================
+  MATCHUP: heuristic_bot  vs  aggresive_botr
+  Date: 2026-03-28 15:14:45
+============================================================
+
+  Hands played      : 1000
+  Winner            : aggresive_botr
+
+  heuristic_bot          | aggresive_botr
+  --------------------------------------------------
+  Total chips       : -3498  |  +3498
+  Hands won         : 0  |  999  (ties: 1)
+  Win rate          : 0.0%  |  99.9%
+  Avg chips/hand    : -3.50  |  +3.50
+  Biggest single win: 0  |  5
+  Best win streak   : 0 hands
+  Worst loss streak : 598 hands
+  Redraws used      : 0  |  105
+

@@ -1,0 +1,19 @@
+============================================================
+  MATCHUP: rishabh_bot  vs  madhav_claudeide_bot
+  Date: 2026-03-28 15:09:50
+============================================================
+
+  Hands played      : 1000
+  Winner            : rishabh_bot
+
+  rishabh_bot            | madhav_claudeide_bot
+  --------------------------------------------------
+  Total chips       : +2411  |  -2411
+  Hands won         : 864  |  134  (ties: 2)
+  Win rate          : 86.4%  |  13.4%
+  Avg chips/hand    : +2.41  |  -2.41
+  Biggest single win: 5  |  5
+  Best win streak   : 25 hands
+  Worst loss streak : 1 hands
+  Redraws used      : 121  |  0
+

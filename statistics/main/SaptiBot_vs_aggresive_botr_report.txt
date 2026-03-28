@@ -1,0 +1,19 @@
+============================================================
+  MATCHUP: SaptiBot  vs  aggresive_botr
+  Date: 2026-03-28 15:14:24
+============================================================
+
+  Hands played      : 1000
+  Winner            : SaptiBot
+
+  SaptiBot               | aggresive_botr
+  --------------------------------------------------
+  Total chips       : +2275  |  -2275
+  Hands won         : 873  |  118  (ties: 9)
+  Win rate          : 87.3%  |  11.8%
+  Avg chips/hand    : +2.27  |  -2.27
+  Biggest single win: 5  |  5
+  Best win streak   : 37 hands
+  Worst loss streak : 1 hands
+  Redraws used      : 416  |  0
+

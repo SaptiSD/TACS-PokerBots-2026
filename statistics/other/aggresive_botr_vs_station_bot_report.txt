@@ -1,0 +1,19 @@
+============================================================
+  MATCHUP: aggresive_botr  vs  station_bot
+  Date: 2026-03-28 15:14:47
+============================================================
+
+  Hands played      : 1000
+  Winner            : aggresive_botr
+
+  aggresive_botr         | station_bot
+  --------------------------------------------------
+  Total chips       : +4980  |  -4980
+  Hands won         : 998  |  2  (ties: 0)
+  Win rate          : 99.8%  |  0.2%
+  Avg chips/hand    : +4.98  |  -4.98
+  Biggest single win: 5  |  5
+  Best win streak   : 635 hands
+  Worst loss streak : 1 hands
+  Redraws used      : 256  |  0
+

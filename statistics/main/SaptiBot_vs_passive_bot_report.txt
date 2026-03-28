@@ -1,0 +1,19 @@
+============================================================
+  MATCHUP: SaptiBot  vs  passive_bot
+  Date: 2026-03-28 15:14:37
+============================================================
+
+  Hands played      : 1000
+  Winner            : SaptiBot
+
+  SaptiBot               | passive_bot
+  --------------------------------------------------
+  Total chips       : +2936  |  -2936
+  Hands won         : 695  |  282  (ties: 23)
+  Win rate          : 69.5%  |  28.2%
+  Avg chips/hand    : +2.94  |  -2.94
+  Biggest single win: 20  |  22
+  Best win streak   : 19 hands
+  Worst loss streak : 5 hands
+  Redraws used      : 878  |  0
+

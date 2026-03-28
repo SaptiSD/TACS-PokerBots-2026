@@ -1,0 +1,19 @@
+============================================================
+  MATCHUP: heuristic_bot  vs  station_bot
+  Date: 2026-03-28 15:14:46
+============================================================
+
+  Hands played      : 1000
+  Winner            : heuristic_bot
+
+  heuristic_bot          | station_bot
+  --------------------------------------------------
+  Total chips       : +709  |  -709
+  Hands won         : 607  |  392  (ties: 1)
+  Win rate          : 60.7%  |  39.2%
+  Avg chips/hand    : +0.71  |  -0.71
+  Biggest single win: 5  |  5
+  Best win streak   : 7 hands
+  Worst loss streak : 1 hands
+  Redraws used      : 418  |  0
+

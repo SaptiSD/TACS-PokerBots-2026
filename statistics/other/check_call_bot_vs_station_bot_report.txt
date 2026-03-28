@@ -1,0 +1,19 @@
+============================================================
+  MATCHUP: check_call_bot  vs  station_bot
+  Date: 2026-03-28 15:14:50
+============================================================
+
+  Hands played      : 1000
+  Winner            : check_call_bot
+
+  check_call_bot         | station_bot
+  --------------------------------------------------
+  Total chips       : +1225  |  -1225
+  Hands won         : 768  |  223  (ties: 9)
+  Win rate          : 76.8%  |  22.3%
+  Avg chips/hand    : +1.23  |  -1.23
+  Biggest single win: 5  |  5
+  Best win streak   : 23 hands
+  Worst loss streak : 1 hands
+  Redraws used      : 362  |  0
+

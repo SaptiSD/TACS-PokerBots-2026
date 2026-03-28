@@ -1,0 +1,19 @@
+============================================================
+  MATCHUP: tight_bot  vs  station_bot
+  Date: 2026-03-28 15:14:49
+============================================================
+
+  Hands played      : 1000
+  Winner            : tight_bot
+
+  tight_bot              | station_bot
+  --------------------------------------------------
+  Total chips       : +1225  |  -1225
+  Hands won         : 762  |  217  (ties: 21)
+  Win rate          : 76.2%  |  21.7%
+  Avg chips/hand    : +1.23  |  -1.23
+  Biggest single win: 5  |  5
+  Best win streak   : 15 hands
+  Worst loss streak : 1 hands
+  Redraws used      : 471  |  0
+

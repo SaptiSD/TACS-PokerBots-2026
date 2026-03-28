@@ -1,0 +1,19 @@
+============================================================
+  MATCHUP: check_call_bot  vs  maniac_bot
+  Date: 2026-03-28 15:14:49
+============================================================
+
+  Hands played      : 1000
+  Winner            : check_call_bot
+
+  check_call_bot         | maniac_bot
+  --------------------------------------------------
+  Total chips       : +1040  |  -1040
+  Hands won         : 745  |  237  (ties: 18)
+  Win rate          : 74.5%  |  23.7%
+  Avg chips/hand    : +1.04  |  -1.04
+  Biggest single win: 5  |  5
+  Best win streak   : 17 hands
+  Worst loss streak : 1 hands
+  Redraws used      : 364  |  0
+

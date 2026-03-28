@@ -1,0 +1,19 @@
+============================================================
+  MATCHUP: check_call_bot  vs  passive_bot
+  Date: 2026-03-28 15:14:50
+============================================================
+
+  Hands played      : 1000
+  Winner            : check_call_bot
+
+  check_call_bot         | passive_bot
+  --------------------------------------------------
+  Total chips       : +405  |  -405
+  Hands won         : 519  |  438  (ties: 43)
+  Win rate          : 51.9%  |  43.8%
+  Avg chips/hand    : +0.41  |  -0.41
+  Biggest single win: 5  |  5
+  Best win streak   : 11 hands
+  Worst loss streak : 8 hands
+  Redraws used      : 729  |  0
+

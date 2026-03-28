@@ -1,0 +1,19 @@
+============================================================
+  MATCHUP: rishabh_bot  vs  aggresive_botr
+  Date: 2026-03-28 15:10:22
+============================================================
+
+  Hands played      : 1000
+  Winner            : rishabh_bot
+
+  rishabh_bot            | aggresive_botr
+  --------------------------------------------------
+  Total chips       : +2441  |  -2441
+  Hands won         : 825  |  170  (ties: 5)
+  Win rate          : 82.5%  |  17.0%
+  Avg chips/hand    : +2.44  |  -2.44
+  Biggest single win: 250  |  250
+  Best win streak   : 29 hands
+  Worst loss streak : 5 hands
+  Redraws used      : 121  |  2
+

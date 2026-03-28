@@ -1,0 +1,19 @@
+============================================================
+  MATCHUP: SaptiBot  vs  tag_bot
+  Date: 2026-03-28 15:14:41
+============================================================
+
+  Hands played      : 1000
+  Winner            : SaptiBot
+
+  SaptiBot               | tag_bot
+  --------------------------------------------------
+  Total chips       : +2370  |  -2370
+  Hands won         : 884  |  110  (ties: 6)
+  Win rate          : 88.4%  |  11.0%
+  Avg chips/hand    : +2.37  |  -2.37
+  Biggest single win: 5  |  5
+  Best win streak   : 41 hands
+  Worst loss streak : 1 hands
+  Redraws used      : 418  |  0
+

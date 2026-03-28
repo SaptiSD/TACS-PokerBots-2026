@@ -1,0 +1,19 @@
+============================================================
+  MATCHUP: check_call_bot  vs  tag_bot
+  Date: 2026-03-28 15:14:50
+============================================================
+
+  Hands played      : 1000
+  Winner            : check_call_bot
+
+  check_call_bot         | tag_bot
+  --------------------------------------------------
+  Total chips       : +1110  |  -1110
+  Hands won         : 752  |  230  (ties: 18)
+  Win rate          : 75.2%  |  23.0%
+  Avg chips/hand    : +1.11  |  -1.11
+  Biggest single win: 5  |  5
+  Best win streak   : 23 hands
+  Worst loss streak : 1 hands
+  Redraws used      : 351  |  0
+

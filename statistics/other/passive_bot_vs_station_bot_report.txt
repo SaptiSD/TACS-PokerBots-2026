@@ -1,0 +1,18 @@
+============================================================
+  MATCHUP: passive_bot  vs  station_bot
+  Date: 2026-03-28 15:14:51
+============================================================
+
+  Hands played      : 1000
+  Winner            : passive_bot
+
+  passive_bot            | station_bot
+  --------------------------------------------------
+  Total chips       : +1010  |  -1010
+  Hands won         : 741  |  239  (ties: 20)
+  Win rate          : 74.1%  |  23.9%
+  Avg chips/hand    : +1.01  |  -1.01
+  Biggest single win: 5  |  5
+  Best win streak   : 15 hands
+  Worst loss streak : 1 hands
+

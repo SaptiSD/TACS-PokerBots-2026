@@ -1,0 +1,19 @@
+============================================================
+  MATCHUP: all_in_bot  vs  aggresive_botr
+  Date: 2026-03-28 15:14:43
+============================================================
+
+  Hands played      : 1000
+  Winner            : aggresive_botr
+
+  all_in_bot             | aggresive_botr
+  --------------------------------------------------
+  Total chips       : -4241  |  +4241
+  Hands won         : 0  |  1000  (ties: 0)
+  Win rate          : 0.0%  |  100.0%
+  Avg chips/hand    : -4.24  |  +4.24
+  Biggest single win: 0  |  250
+  Best win streak   : 0 hands
+  Worst loss streak : 1000 hands
+  Redraws used      : 0  |  135
+

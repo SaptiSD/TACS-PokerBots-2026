@@ -1,0 +1,19 @@
+============================================================
+  MATCHUP: heuristic_bot  vs  check_call_bot
+  Date: 2026-03-28 15:14:45
+============================================================
+
+  Hands played      : 1000
+  Winner            : check_call_bot
+
+  heuristic_bot          | check_call_bot
+  --------------------------------------------------
+  Total chips       : -900  |  +900
+  Hands won         : 253  |  733  (ties: 14)
+  Win rate          : 25.3%  |  73.3%
+  Avg chips/hand    : -0.90  |  +0.90
+  Biggest single win: 5  |  5
+  Best win streak   : 1 hands
+  Worst loss streak : 17 hands
+  Redraws used      : 2  |  351
+

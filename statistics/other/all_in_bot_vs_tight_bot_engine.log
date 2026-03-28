@@ -1,0 +1,6 @@
+Starting Pokerbots engine...
+all_in_bot connected successfully
+tight_bot connected successfully
+tight_bot disconnected
+Could not close socket connection with tight_bot
+Writing ./statistics/tmp/gamelog.txt

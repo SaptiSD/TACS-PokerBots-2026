@@ -1,0 +1,19 @@
+============================================================
+  MATCHUP: rishabh_bot  vs  passive_bot
+  Date: 2026-03-28 15:13:43
+============================================================
+
+  Hands played      : 1000
+  Winner            : rishabh_bot
+
+  rishabh_bot            | passive_bot
+  --------------------------------------------------
+  Total chips       : +2701  |  -2701
+  Hands won         : 534  |  435  (ties: 31)
+  Win rate          : 53.4%  |  43.5%
+  Avg chips/hand    : +2.70  |  -2.70
+  Biggest single win: 34  |  34
+  Best win streak   : 9 hands
+  Worst loss streak : 7 hands
+  Redraws used      : 464  |  0
+

@@ -1,0 +1,18 @@
+============================================================
+  MATCHUP: madhav_claudeide_bot  vs  passive_bot
+  Date: 2026-03-28 15:14:43
+============================================================
+
+  Hands played      : 1000
+  Winner            : passive_bot
+
+  madhav_claudeide_bot   | passive_bot
+  --------------------------------------------------
+  Total chips       : -870  |  +870
+  Hands won         : 248  |  722  (ties: 30)
+  Win rate          : 24.8%  |  72.2%
+  Avg chips/hand    : -0.87  |  +0.87
+  Biggest single win: 5  |  5
+  Best win streak   : 1 hands
+  Worst loss streak : 13 hands
+

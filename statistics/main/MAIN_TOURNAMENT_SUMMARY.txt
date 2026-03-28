@@ -1,0 +1,69 @@
+======================================================================
+  BUILD4GOOD 2026 — MAIN BOT TOURNAMENT SUMMARY
+  Date: 2026-03-28 15:14:43
+  Main bots: rishabh_bot, SaptiBot, madhav_claudeide_bot
+  Each played vs all 11 opponents  |  1000 hands/match
+======================================================================
+
+  OVERALL RANKING (main bots)
+  RANK  BOT                       W-L-T       TOTAL CHIPS   AVG/HAND
+  -----------------------------------------------------------------
+  1     rishabh_bot               11-0-0          +74,715      +6.79
+  2     SaptiBot                  10-1-0             -798      -0.07
+  3     madhav_claudeide_bot      0-8-3           -15,467      -1.41
+
+======================================================================
+  WINNER: rishabh_bot
+======================================================================
+
+
+  ── rishabh_bot ──
+  OPPONENT                  RESULT      CHIPS    WIN%   AVG/HAND  BIGGEST WIN
+  ---------------------------------------------------------------------------
+  all_in_bot                W          +25738   32.3%     +25.74          250
+  SaptiBot                  W          +23728   40.2%     +23.73          250
+  check_call_bot            W           +6967   49.0%      +6.97          250
+  passive_bot               W           +2701   53.4%      +2.70           34
+  tag_bot                   W           +2473   86.9%      +2.47            5
+  aggresive_botr            W           +2441   82.5%      +2.44          250
+  madhav_claudeide_bot      W           +2411   86.4%      +2.41            5
+  heuristic_bot             W           +2279   84.2%      +2.28           30
+  station_bot               W           +2225   83.6%      +2.23            5
+  maniac_bot                W           +2221   83.8%      +2.22            5
+  tight_bot                 W           +1531   73.0%      +1.53          250
+
+  Total chips: +74,715  |  Record: 11W-0L-0T
+
+  ── SaptiBot ──
+  OPPONENT                  RESULT      CHIPS    WIN%   AVG/HAND  BIGGEST WIN
+  ---------------------------------------------------------------------------
+  passive_bot               W           +2936   69.5%      +2.94           20
+  tag_bot                   W           +2370   88.4%      +2.37            5
+  aggresive_botr            W           +2275   87.3%      +2.27            5
+  madhav_claudeide_bot      W           +2270   86.8%      +2.27            5
+  maniac_bot                W           +2270   87.2%      +2.27            5
+  tight_bot                 W           +2260   87.1%      +2.26            5
+  heuristic_bot             W           +2235   87.1%      +2.23            5
+  all_in_bot                W           +2210   86.4%      +2.21            5
+  station_bot               W           +2060   84.9%      +2.06            5
+  check_call_bot            W           +2044   61.5%      +2.04           18
+  rishabh_bot               L          -23728   57.8%     -23.73          250
+
+  Total chips: -798  |  Record: 10W-1L-0T
+
+  ── madhav_claudeide_bot ──
+  OPPONENT                  RESULT      CHIPS    WIN%   AVG/HAND  BIGGEST WIN
+  ---------------------------------------------------------------------------
+  maniac_bot                T              +0   50.0%      +0.00            2
+  station_bot               T              +0   50.0%      +0.00            2
+  tag_bot                   T              +0   50.0%      +0.00            2
+  heuristic_bot             L            -586   41.0%      -0.59            5
+  passive_bot               L            -870   24.8%      -0.87            5
+  check_call_bot            L           -1030   23.8%      -1.03            5
+  tight_bot                 L           -1310   21.1%      -1.31            5
+  SaptiBot                  L           -2270   11.4%      -2.27            5
+  rishabh_bot               L           -2411   13.4%      -2.41            5
+  aggresive_botr            L           -3490    0.1%      -3.49            5
+  all_in_bot                L           -3500    0.0%      -3.50            0
+
+  Total chips: -15,467  |  Record: 0W-8L-3T

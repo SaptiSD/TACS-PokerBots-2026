@@ -1,0 +1,19 @@
+============================================================
+  MATCHUP: SaptiBot  vs  check_call_bot
+  Date: 2026-03-28 15:14:31
+============================================================
+
+  Hands played      : 1000
+  Winner            : SaptiBot
+
+  SaptiBot               | check_call_bot
+  --------------------------------------------------
+  Total chips       : +2044  |  -2044
+  Hands won         : 615  |  362  (ties: 23)
+  Win rate          : 61.5%  |  36.2%
+  Avg chips/hand    : +2.04  |  -2.04
+  Biggest single win: 18  |  18
+  Best win streak   : 14 hands
+  Worst loss streak : 6 hands
+  Redraws used      : 870  |  562
+

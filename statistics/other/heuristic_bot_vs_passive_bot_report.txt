@@ -1,0 +1,19 @@
+============================================================
+  MATCHUP: heuristic_bot  vs  passive_bot
+  Date: 2026-03-28 15:14:46
+============================================================
+
+  Hands played      : 1000
+  Winner            : heuristic_bot
+
+  heuristic_bot          | passive_bot
+  --------------------------------------------------
+  Total chips       : +1709  |  -1709
+  Hands won         : 353  |  619  (ties: 28)
+  Win rate          : 35.3%  |  61.9%
+  Avg chips/hand    : +1.71  |  -1.71
+  Biggest single win: 30  |  30
+  Best win streak   : 5 hands
+  Worst loss streak : 9 hands
+  Redraws used      : 864  |  0
+

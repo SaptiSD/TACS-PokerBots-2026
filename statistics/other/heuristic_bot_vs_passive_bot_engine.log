@@ -1,0 +1,4 @@
+Starting Pokerbots engine...
+heuristic_bot connected successfully
+passive_bot connected successfully
+Writing ./statistics/tmp/gamelog.txt

@@ -1,0 +1,19 @@
+============================================================
+  MATCHUP: heuristic_bot  vs  tight_bot
+  Date: 2026-03-28 15:14:45
+============================================================
+
+  Hands played      : 1000
+  Winner            : tight_bot
+
+  heuristic_bot          | tight_bot
+  --------------------------------------------------
+  Total chips       : -1118  |  +1118
+  Hands won         : 230  |  753  (ties: 17)
+  Win rate          : 23.0%  |  75.3%
+  Avg chips/hand    : -1.12  |  +1.12
+  Biggest single win: 5  |  5
+  Best win streak   : 1 hands
+  Worst loss streak : 15 hands
+  Redraws used      : 0  |  469
+

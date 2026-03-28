@@ -1,0 +1,19 @@
+============================================================
+  MATCHUP: SaptiBot  vs  maniac_bot
+  Date: 2026-03-28 15:14:33
+============================================================
+
+  Hands played      : 1000
+  Winner            : SaptiBot
+
+  SaptiBot               | maniac_bot
+  --------------------------------------------------
+  Total chips       : +2270  |  -2270
+  Hands won         : 872  |  118  (ties: 10)
+  Win rate          : 87.2%  |  11.8%
+  Avg chips/hand    : +2.27  |  -2.27
+  Biggest single win: 5  |  5
+  Best win streak   : 31 hands
+  Worst loss streak : 1 hands
+  Redraws used      : 421  |  0
+

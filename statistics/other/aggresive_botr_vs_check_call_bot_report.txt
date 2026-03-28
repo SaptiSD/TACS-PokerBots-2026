@@ -1,0 +1,19 @@
+============================================================
+  MATCHUP: aggresive_botr  vs  check_call_bot
+  Date: 2026-03-28 15:14:47
+============================================================
+
+  Hands played      : 1000
+  Winner            : check_call_bot
+
+  aggresive_botr         | check_call_bot
+  --------------------------------------------------
+  Total chips       : -1217  |  +1217
+  Hands won         : 222  |  763  (ties: 15)
+  Win rate          : 22.2%  |  76.3%
+  Avg chips/hand    : -1.22  |  +1.22
+  Biggest single win: 5  |  5
+  Best win streak   : 8 hands
+  Worst loss streak : 21 hands
+  Redraws used      : 2  |  364
+

@@ -1,0 +1,6 @@
+Starting Pokerbots engine...
+aggresive_botr connected successfully
+tight_bot connected successfully
+aggresive_botr disconnected
+Could not close socket connection with aggresive_botr
+Writing ./statistics/tmp/gamelog.txt

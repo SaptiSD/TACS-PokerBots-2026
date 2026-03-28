@@ -1,0 +1,19 @@
+============================================================
+  MATCHUP: heuristic_bot  vs  maniac_bot
+  Date: 2026-03-28 15:14:45
+============================================================
+
+  Hands played      : 1000
+  Winner            : heuristic_bot
+
+  heuristic_bot          | maniac_bot
+  --------------------------------------------------
+  Total chips       : +635  |  -635
+  Hands won         : 599  |  400  (ties: 1)
+  Win rate          : 59.9%  |  40.0%
+  Avg chips/hand    : +0.64  |  -0.64
+  Biggest single win: 5  |  5
+  Best win streak   : 7 hands
+  Worst loss streak : 1 hands
+  Redraws used      : 429  |  0
+

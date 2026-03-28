@@ -1,0 +1,18 @@
+============================================================
+  MATCHUP: passive_bot  vs  tag_bot
+  Date: 2026-03-28 15:14:51
+============================================================
+
+  Hands played      : 1000
+  Winner            : passive_bot
+
+  passive_bot            | tag_bot
+  --------------------------------------------------
+  Total chips       : +980  |  -980
+  Hands won         : 737  |  241  (ties: 22)
+  Win rate          : 73.7%  |  24.1%
+  Avg chips/hand    : +0.98  |  -0.98
+  Biggest single win: 5  |  5
+  Best win streak   : 15 hands
+  Worst loss streak : 1 hands
+
