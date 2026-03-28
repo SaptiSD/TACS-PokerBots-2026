@@ -1,8 +1,8 @@
 # PARAMETERS TO CONTROL THE BEHAVIOR OF THE GAME ENGINE
 # DO NOT REMOVE OR RENAME THIS FILE
-PLAYER_1_NAME = "A"
+PLAYER_1_NAME = "rishabhbot"
 # Point each player path at a Python bot directory with commands.json
-PLAYER_1_PATH = "./all_in_bot"
+PLAYER_1_PATH = "./rishabh_bot"
 # NO TRAILING SLASHES ARE ALLOWED IN PATHS
 PLAYER_2_NAME = "B"
 PLAYER_2_PATH = "./check_call_bot"
