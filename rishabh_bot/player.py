@@ -30,7 +30,7 @@ SUITS = 'cdhs'
 DECK  = [r + s for r in RANKS for s in SUITS]
 
 _HERE       = os.path.dirname(os.path.abspath(__file__))
-LOOKUP_PATH = os.path.join(_HERE, 'preflop_lookup.pkl')
+LOOKUP_PATH = os.path.join(_HERE, 'skeleton', 'preflop_lookup.pkl')
 
 # Redraw thresholds — lower bar since opponent cannot redraw
 PREFLOP_REDRAW_EQ_MAX   = 0.44

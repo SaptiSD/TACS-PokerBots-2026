@@ -9,8 +9,8 @@ TerminalState = namedtuple('TerminalState', ['deltas', 'previous_state'])
 
 NUM_ROUNDS = 1000
 STARTING_STACK = 400
-BIG_BLIND = 2
-SMALL_BLIND = 1
+BIG_BLIND = 5
+SMALL_BLIND = 2
 
 
 class RoundState(
