@@ -1,0 +1,19 @@
+============================================================
+  MATCHUP: SaptiBot  vs  rishabh_bot
+  Date: 2026-03-28 14:22:15
+============================================================
+
+  Hands played      : 1000
+  Winner            : SaptiBot
+
+  SaptiBot               | rishabh_bot
+  --------------------------------------------------
+  Total chips       : +1978  |  -1978
+  Hands won         : 843  |  148  (ties: 9)
+  Win rate          : 84.3%  |  14.8%
+  Avg chips/hand    : +1.98  |  -1.98
+  Biggest single win: 5  |  5
+  Best win streak   : 53 hands
+  Worst loss streak : 2 hands
+  Redraws used      : 453  |  2
+
