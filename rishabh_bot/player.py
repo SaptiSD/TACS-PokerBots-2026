@@ -30,7 +30,7 @@ SUITS = 'cdhs'
 DECK  = [r + s for r in RANKS for s in SUITS]
 
 _HERE       = os.path.dirname(os.path.abspath(__file__))
-LOOKUP_PATH = os.path.join(_HERE, '..', 'preflop_lookup.pkl')
+LOOKUP_PATH = os.path.join(_HERE, 'preflop_lookup.pkl')
 
 # Redraw thresholds — lower bar since opponent cannot redraw
 PREFLOP_REDRAW_EQ_MAX   = 0.44
@@ -232,7 +232,10 @@ def choose_bet(equity, pot_odds, legal, min_r, max_r, cost, stack, rounds, opp_a
         if equity < BLUFF_MAX and random.random() < bluff:
             return RaiseAction(min_r)
 
-    if equity >= CALL_MIN or equity >= pot_odds:
+    # Call if equity beats our floor OR the pot is laying better odds than the floor.
+    # For large bets (pot_odds > CALL_MIN), require equity to cover pot odds.
+    call_thresh = pot_odds if pot_odds > CALL_MIN else CALL_MIN
+    if equity >= call_thresh:
         if CallAction in legal and cost > 0:
             return CallAction()
         if CheckAction in legal:
@@ -265,6 +268,13 @@ class Player(Bot):
         self.rounds_played += 1
 
     def get_action(self, game_state, round_state, active):
+        try:
+            return self._get_action(game_state, round_state, active)
+        except Exception:
+            legal = round_state.legal_actions()
+            return CheckAction() if CheckAction in legal else (FoldAction() if FoldAction in legal else CallAction())
+
+    def _get_action(self, game_state, round_state, active):
         legal         = round_state.legal_actions()
         street        = round_state.street
         my_cards      = round_state.hands[active]
@@ -307,16 +317,20 @@ class Player(Bot):
                 gain      = best_r_eq - equity
                 best_r_idx = 0 if r0 >= r1 else 1
 
-            # Fold weak hands facing a raise
-            if cost > BIG_BLIND and equity < FOLD_VS_RAISE:
+            # Fold weak hands facing a raise — use pot-odds threshold for large bets
+            fold_thresh = max(FOLD_VS_RAISE, pot_odds * 0.85) if pot_odds > FOLD_VS_RAISE else FOLD_VS_RAISE
+            if cost > BIG_BLIND and equity < fold_thresh:
                 if FoldAction in legal:
                     return FoldAction()
 
-            # Redraw preflop — we have asymmetric edge (opponent can't redraw)
+            # Redraw preflop — only when we're raising or checking (not calling/folding).
+            # Engine doesn't accept RedrawAction with CallAction inner bet.
+            # No point redrawing if we'd fold anyway.
             if can_redraw and equity < PREFLOP_REDRAW_EQ_MAX and gain >= PREFLOP_REDRAW_MIN_GAIN:
                 bet = choose_bet(best_r_eq, pot_odds, legal, min_r, max_r,
                                  cost, my_stack, self.rounds_played, self.opp_agg)
-                return RedrawAction('hole', best_r_idx, bet)
+                if isinstance(bet, (RaiseAction, CheckAction)):
+                    return RedrawAction('hole', best_r_idx, bet)
 
             return choose_bet(equity, pot_odds, legal, min_r, max_r,
                               cost, my_stack, self.rounds_played, self.opp_agg)
@@ -327,13 +341,14 @@ class Player(Bot):
         iters  = {3: 200, 4: 260, 5: 340}.get(street, 200)
         equity = mc_equity(my_cards, board, n=iters)
 
-        # Postflop redraw
+        # Postflop redraw — only when we're raising or checking
         if can_redraw and equity < POST_REDRAW_EQ_MAX:
             best_r_eq, ttype, tidx = best_redraw_option(my_cards, board, n=iters // 3)
             if best_r_eq - equity >= POST_REDRAW_MIN_GAIN:
                 bet = choose_bet(best_r_eq, pot_odds, legal, min_r, max_r,
                                  cost, my_stack, self.rounds_played, self.opp_agg)
-                return RedrawAction(ttype, tidx, bet)
+                if isinstance(bet, (RaiseAction, CheckAction)):
+                    return RedrawAction(ttype, tidx, bet)
 
         # With shallow stack-to-pot, commit with decent equity
         spr = my_stack / (pot + 1e-9)
