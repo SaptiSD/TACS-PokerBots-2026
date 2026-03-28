@@ -16,12 +16,33 @@ RANKS = '23456789TJQKA'
 SUITS = 'cdhs'
 ALL_CARDS = [r + s for r in RANKS for s in SUITS]
 
-# Preflop hand strength tiers (heads-up, 0.0=worst, 1.0=best)
-# Pocket pairs
-PAIR_STRENGTH = {
-    'A': 0.98, 'K': 0.95, 'Q': 0.92, 'J': 0.89, 'T': 0.86,
-    '9': 0.78, '8': 0.74, '7': 0.70, '6': 0.66, '5': 0.62,
-    '4': 0.58, '3': 0.55, '2': 0.52
+PREFLOP_LUT = {
+    'AA': 0.852, 'KK': 0.824, 'QQ': 0.799, 'JJ': 0.774, 'TT': 0.750,
+    '99': 0.716, '88': 0.691, '77': 0.662, '66': 0.632, '55': 0.603,
+    '44': 0.570, '33': 0.536, '22': 0.503,
+    'AKs': 0.670, 'AQs': 0.662, 'AJs': 0.654, 'ATs': 0.644, 'A9s': 0.625, 'A8s': 0.615, 'A7s': 0.605, 'A6s': 0.593, 'A5s': 0.599, 'A4s': 0.589, 'A3s': 0.580, 'A2s': 0.571,
+    'AKo': 0.653, 'AQo': 0.644, 'AJo': 0.635, 'ATo': 0.625, 'A9o': 0.603, 'A8o': 0.592, 'A7o': 0.581, 'A6o': 0.569, 'A5o': 0.575, 'A4o': 0.563, 'A3o': 0.553, 'A2o': 0.543,
+    'KQs': 0.634, 'KJs': 0.625, 'KTs': 0.615, 'K9s': 0.595, 'K8s': 0.578, 'K7s': 0.568, 'K6s': 0.557, 'K5s': 0.546, 'K4s': 0.535, 'K3s': 0.525, 'K2s': 0.515,
+    'KQo': 0.614, 'KJo': 0.604, 'KTo': 0.593, 'K9o': 0.570, 'K8o': 0.552, 'K7o': 0.540, 'K6o': 0.528, 'K5o': 0.516, 'K4o': 0.504, 'K3o': 0.493, 'K2o': 0.482,
+    'QJs': 0.602, 'QTs': 0.592, 'Q9s': 0.572, 'Q8s': 0.553, 'Q7s': 0.536, 'Q6s': 0.525, 'Q5s': 0.514, 'Q4s': 0.502, 'Q3s': 0.491, 'Q2s': 0.480,
+    'QJo': 0.580, 'QTo': 0.568, 'Q9o': 0.546, 'Q8o': 0.525, 'Q7o': 0.506, 'Q6o': 0.493, 'Q5o': 0.481, 'Q4o': 0.469, 'Q3o': 0.457, 'Q2o': 0.445,
+    'JTs': 0.575, 'J9s': 0.555, 'J8s': 0.536, 'J7s': 0.517, 'J6s': 0.498, 'J5s': 0.487, 'J4s': 0.476, 'J3s': 0.464, 'J2s': 0.453,
+    'JTo': 0.550, 'J9o': 0.528, 'J8o': 0.507, 'J7o': 0.485, 'J6o': 0.464, 'J5o': 0.452, 'J4o': 0.440, 'J3o': 0.428, 'J2o': 0.415,
+    'T9s': 0.540, 'T8s': 0.521, 'T7s': 0.503, 'T6s': 0.485, 'T5s': 0.465, 'T4s': 0.453, 'T3s': 0.441, 'T2s': 0.429,
+    'T9o': 0.513, 'T8o': 0.491, 'T7o': 0.470, 'T6o': 0.450, 'T5o': 0.428, 'T4o': 0.416, 'T3o': 0.403, 'T2o': 0.390,
+    '98s': 0.505, '97s': 0.487, '96s': 0.469, '95s': 0.449, '94s': 0.429, '93s': 0.417, '92s': 0.404,
+    '98o': 0.474, '97o': 0.453, '96o': 0.433, '95o': 0.411, '94o': 0.389, '93o': 0.375, '92o': 0.362,
+    '87s': 0.474, '86s': 0.455, '85s': 0.436, '84s': 0.415, '83s': 0.394, '82s': 0.380,
+    '87o': 0.440, '86o': 0.418, '85o': 0.395, '84o': 0.372, '83o': 0.350, '82o': 0.334,
+    '76s': 0.446, '75s': 0.427, '74s': 0.407, '73s': 0.385, '72s': 0.360,
+    '76o': 0.408, '75o': 0.386, '74o': 0.363, '73o': 0.339, '72o': 0.311,
+    '65s': 0.424, '64s': 0.403, '63s': 0.383, '62s': 0.358,
+    '65o': 0.383, '64o': 0.360, '63o': 0.337, '62o': 0.310,
+    '54s': 0.410, '53s': 0.390, '52s': 0.371,
+    '54o': 0.367, '53o': 0.345, '52o': 0.325,
+    '43s': 0.380, '42s': 0.360,
+    '43o': 0.335, '42o': 0.312,
+    '32s': 0.351, '32o': 0.302
 }
 
 # Monte Carlo simulation budget control
@@ -132,54 +153,28 @@ def monte_carlo_win_rate(my_hand, board, num_sims, known_opp_cards=None):
 
 
 def preflop_hand_strength(hand):
-    """Quick preflop hand strength estimate without MC (for speed)."""
+    """Exact preflop head-to-head equity using a Lookup Table (LUT)."""
     if len(hand) < 2:
         return 0.3
-    c1, c2 = card_to_str(hand[0]), card_to_str(hand[1])
-    r1, r2 = rank_value(c1), rank_value(c2)
+    c1, c2 = hand[0], hand[1]
+    
+    if not c1 or not c2 or c1 == '??' or c2 == '??':
+        return 0.5
 
-    if r1 < 0 or r2 < 0:
-        return 0.3
+    r1, r2 = c1[0], c2[0]
+    idx1, idx2 = RANKS.find(r1), RANKS.find(r2)
 
-    # Pocket pair
+    # Reorder so higher rank comes first (e.g. 'A' before 'K')
+    if idx1 < idx2:
+        r1, r2 = r2, r1
+
     if r1 == r2:
-        return PAIR_STRENGTH.get(c1[0], 0.5)
+        key = r1 + r2
+    else:
+        suited = 's' if c1[1] == c2[1] else 'o'
+        key = r1 + r2 + suited
 
-    suited = (len(c1) >= 2 and len(c2) >= 2 and c1[1] == c2[1])
-    high = max(r1, r2)
-    low = min(r1, r2)
-    gap = high - low
-
-    # Base strength from high card
-    strength = 0.20 + high * 0.045
-
-    # Suited bonus
-    if suited:
-        strength += 0.04
-
-    # Connectedness bonus
-    if gap == 1:
-        strength += 0.03
-    elif gap == 2:
-        strength += 0.01
-
-    # Both broadway (T+)
-    if low >= 8:  # T is index 8
-        strength += 0.06
-
-    # Ace-high
-    if high == 12:
-        strength += 0.05
-        if low >= 8:  # AT+
-            strength += 0.05
-
-    # King-high
-    if high == 11:
-        strength += 0.02
-        if low >= 8:
-            strength += 0.03
-
-    return min(strength, 0.95)
+    return PREFLOP_LUT.get(key, 0.5)
 
 
 class OpponentModel:
