@@ -1,7 +1,9 @@
 {
-    "build": [],
-    "run": [
-        "python3",
-        "player.py"
-    ]
+    "build":  [
+
+              ],
+    "run":  [
+                "python3",
+                "player.py"
+            ]
 }
