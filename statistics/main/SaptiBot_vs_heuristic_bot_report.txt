@@ -1,0 +1,19 @@
+============================================================
+  MATCHUP: SaptiBot  vs  heuristic_bot
+  Date: 2026-03-28 13:57:12
+============================================================
+
+  Hands played      : 1000
+  Winner            : heuristic_bot
+
+  SaptiBot               | heuristic_bot
+  --------------------------------------------------
+  Total chips       : -665  |  +665
+  Hands won         : 399  |  601  (ties: 0)
+  Win rate          : 39.9%  |  60.1%
+  Avg chips/hand    : -0.67  |  +0.67
+  Biggest single win: 5  |  5
+  Best win streak   : 1 hands
+  Worst loss streak : 7 hands
+  Redraws used      : 0  |  426
+

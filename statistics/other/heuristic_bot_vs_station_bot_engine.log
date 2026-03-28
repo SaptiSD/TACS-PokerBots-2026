@@ -1,0 +1,4 @@
+Starting Pokerbots engine...
+heuristic_bot connected successfully
+station_bot run failed - check "run" in commands.json
+Writing ./statistics/tmp/gamelog.txt

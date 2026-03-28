@@ -1,0 +1,19 @@
+============================================================
+  MATCHUP: all_in_bot  vs  tight_bot
+  Date: 2026-03-28 13:57:14
+============================================================
+
+  Hands played      : 1000
+  Winner            : tight_bot
+
+  all_in_bot             | tight_bot
+  --------------------------------------------------
+  Total chips       : -1303  |  +1303
+  Hands won         : 210  |  770  (ties: 20)
+  Win rate          : 21.0%  |  77.0%
+  Avg chips/hand    : -1.30  |  +1.30
+  Biggest single win: 5  |  5
+  Best win streak   : 1 hands
+  Worst loss streak : 15 hands
+  Redraws used      : 0  |  478
+

@@ -1,0 +1,19 @@
+============================================================
+  MATCHUP: tight_bot  vs  passive_bot
+  Date: 2026-03-28 13:57:18
+============================================================
+
+  Hands played      : 1000
+  Winner            : tight_bot
+
+  tight_bot              | passive_bot
+  --------------------------------------------------
+  Total chips       : +1350  |  -1350
+  Hands won         : 778  |  208  (ties: 14)
+  Win rate          : 77.8%  |  20.8%
+  Avg chips/hand    : +1.35  |  -1.35
+  Biggest single win: 5  |  5
+  Best win streak   : 19 hands
+  Worst loss streak : 1 hands
+  Redraws used      : 471  |  0
+

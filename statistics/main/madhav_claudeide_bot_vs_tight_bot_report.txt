@@ -1,0 +1,19 @@
+============================================================
+  MATCHUP: madhav_claudeide_bot  vs  tight_bot
+  Date: 2026-03-28 13:57:13
+============================================================
+
+  Hands played      : 1000
+  Winner            : tight_bot
+
+  madhav_claudeide_bot   | tight_bot
+  --------------------------------------------------
+  Total chips       : -1315  |  +1315
+  Hands won         : 209  |  772  (ties: 19)
+  Win rate          : 20.9%  |  77.2%
+  Avg chips/hand    : -1.31  |  +1.31
+  Biggest single win: 5  |  5
+  Best win streak   : 1 hands
+  Worst loss streak : 25 hands
+  Redraws used      : 0  |  466
+

@@ -1,0 +1,4 @@
+Starting Pokerbots engine...
+aggresive_botr connected successfully
+tag_bot run failed - check "run" in commands.json
+Writing ./statistics/tmp/gamelog.txt

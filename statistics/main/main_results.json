@@ -1,0 +1,310 @@
+{
+  "date": "2026-03-28T13:57:13.825001",
+  "main_bots": [
+    "rishabh_bot",
+    "SaptiBot",
+    "madhav_claudeide_bot"
+  ],
+  "rankings": [
+    {
+      "rank": 1,
+      "bot": "rishabh_bot",
+      "wins": 8,
+      "losses": 3,
+      "ties": 0,
+      "total_chips": 14440,
+      "avg_chips": 0,
+      "win_rate": 0.0,
+      "matchups": [
+        {
+          "opponent": "SaptiBot",
+          "result": "W",
+          "chips": 2725,
+          "win_rate": 92.0,
+          "avg_per_hand": 2.725,
+          "biggest_win": 5
+        },
+        {
+          "opponent": "madhav_claudeide_bot",
+          "result": "W",
+          "chips": 2400,
+          "win_rate": 88.7,
+          "avg_per_hand": 2.4,
+          "biggest_win": 5
+        },
+        {
+          "opponent": "all_in_bot",
+          "result": "L",
+          "chips": -3748,
+          "win_rate": 0.0,
+          "avg_per_hand": -3.748,
+          "biggest_win": 0
+        },
+        {
+          "opponent": "heuristic_bot",
+          "result": "L",
+          "chips": -769,
+          "win_rate": 38.6,
+          "avg_per_hand": -0.769,
+          "biggest_win": 5
+        },
+        {
+          "opponent": "aggresive_botr",
+          "result": "W",
+          "chips": 2645,
+          "win_rate": 91.0,
+          "avg_per_hand": 2.645,
+          "biggest_win": 5
+        },
+        {
+          "opponent": "tight_bot",
+          "result": "L",
+          "chips": -1413,
+          "win_rate": 20.0,
+          "avg_per_hand": -1.413,
+          "biggest_win": 5
+        },
+        {
+          "opponent": "check_call_bot",
+          "result": "W",
+          "chips": 2635,
+          "win_rate": 90.9,
+          "avg_per_hand": 2.635,
+          "biggest_win": 5
+        },
+        {
+          "opponent": "maniac_bot",
+          "result": "W",
+          "chips": 2470,
+          "win_rate": 89.3,
+          "avg_per_hand": 2.47,
+          "biggest_win": 5
+        },
+        {
+          "opponent": "passive_bot",
+          "result": "W",
+          "chips": 2475,
+          "win_rate": 89.4,
+          "avg_per_hand": 2.475,
+          "biggest_win": 5
+        },
+        {
+          "opponent": "station_bot",
+          "result": "W",
+          "chips": 2575,
+          "win_rate": 90.60000000000001,
+          "avg_per_hand": 2.575,
+          "biggest_win": 5
+        },
+        {
+          "opponent": "tag_bot",
+          "result": "W",
+          "chips": 2445,
+          "win_rate": 89.3,
+          "avg_per_hand": 2.445,
+          "biggest_win": 5
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "bot": "madhav_claudeide_bot",
+      "wins": 0,
+      "losses": 5,
+      "ties": 6,
+      "total_chips": -11364,
+      "avg_chips": 0,
+      "win_rate": 0.0,
+      "matchups": [
+        {
+          "opponent": "rishabh_bot",
+          "result": "L",
+          "chips": -2400,
+          "win_rate": 10.7,
+          "avg_per_hand": -2.4,
+          "biggest_win": 5
+        },
+        {
+          "opponent": "SaptiBot",
+          "result": "T",
+          "chips": 0,
+          "win_rate": 50.0,
+          "avg_per_hand": 0.0,
+          "biggest_win": 2
+        },
+        {
+          "opponent": "all_in_bot",
+          "result": "L",
+          "chips": -3500,
+          "win_rate": 0.0,
+          "avg_per_hand": -3.5,
+          "biggest_win": 0
+        },
+        {
+          "opponent": "heuristic_bot",
+          "result": "L",
+          "chips": -659,
+          "win_rate": 40.0,
+          "avg_per_hand": -0.659,
+          "biggest_win": 5
+        },
+        {
+          "opponent": "aggresive_botr",
+          "result": "L",
+          "chips": -3490,
+          "win_rate": 0.1,
+          "avg_per_hand": -3.49,
+          "biggest_win": 5
+        },
+        {
+          "opponent": "tight_bot",
+          "result": "L",
+          "chips": -1315,
+          "win_rate": 20.9,
+          "avg_per_hand": -1.315,
+          "biggest_win": 5
+        },
+        {
+          "opponent": "check_call_bot",
+          "result": "T",
+          "chips": 0,
+          "win_rate": 50.0,
+          "avg_per_hand": 0.0,
+          "biggest_win": 2
+        },
+        {
+          "opponent": "maniac_bot",
+          "result": "T",
+          "chips": 0,
+          "win_rate": 50.0,
+          "avg_per_hand": 0.0,
+          "biggest_win": 2
+        },
+        {
+          "opponent": "passive_bot",
+          "result": "T",
+          "chips": 0,
+          "win_rate": 50.0,
+          "avg_per_hand": 0.0,
+          "biggest_win": 2
+        },
+        {
+          "opponent": "station_bot",
+          "result": "T",
+          "chips": 0,
+          "win_rate": 50.0,
+          "avg_per_hand": 0.0,
+          "biggest_win": 2
+        },
+        {
+          "opponent": "tag_bot",
+          "result": "T",
+          "chips": 0,
+          "win_rate": 50.0,
+          "avg_per_hand": 0.0,
+          "biggest_win": 2
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "bot": "SaptiBot",
+      "wins": 0,
+      "losses": 5,
+      "ties": 6,
+      "total_chips": -11705,
+      "avg_chips": 0,
+      "win_rate": 0.0,
+      "matchups": [
+        {
+          "opponent": "rishabh_bot",
+          "result": "L",
+          "chips": -2725,
+          "win_rate": 7.5,
+          "avg_per_hand": -2.725,
+          "biggest_win": 5
+        },
+        {
+          "opponent": "madhav_claudeide_bot",
+          "result": "T",
+          "chips": 0,
+          "win_rate": 50.0,
+          "avg_per_hand": 0.0,
+          "biggest_win": 2
+        },
+        {
+          "opponent": "all_in_bot",
+          "result": "L",
+          "chips": -3500,
+          "win_rate": 0.0,
+          "avg_per_hand": -3.5,
+          "biggest_win": 0
+        },
+        {
+          "opponent": "heuristic_bot",
+          "result": "L",
+          "chips": -665,
+          "win_rate": 39.900000000000006,
+          "avg_per_hand": -0.665,
+          "biggest_win": 5
+        },
+        {
+          "opponent": "aggresive_botr",
+          "result": "L",
+          "chips": -3500,
+          "win_rate": 0.0,
+          "avg_per_hand": -3.5,
+          "biggest_win": 0
+        },
+        {
+          "opponent": "tight_bot",
+          "result": "L",
+          "chips": -1315,
+          "win_rate": 20.9,
+          "avg_per_hand": -1.315,
+          "biggest_win": 5
+        },
+        {
+          "opponent": "check_call_bot",
+          "result": "T",
+          "chips": 0,
+          "win_rate": 50.0,
+          "avg_per_hand": 0.0,
+          "biggest_win": 2
+        },
+        {
+          "opponent": "maniac_bot",
+          "result": "T",
+          "chips": 0,
+          "win_rate": 50.0,
+          "avg_per_hand": 0.0,
+          "biggest_win": 2
+        },
+        {
+          "opponent": "passive_bot",
+          "result": "T",
+          "chips": 0,
+          "win_rate": 50.0,
+          "avg_per_hand": 0.0,
+          "biggest_win": 2
+        },
+        {
+          "opponent": "station_bot",
+          "result": "T",
+          "chips": 0,
+          "win_rate": 50.0,
+          "avg_per_hand": 0.0,
+          "biggest_win": 2
+        },
+        {
+          "opponent": "tag_bot",
+          "result": "T",
+          "chips": 0,
+          "win_rate": 50.0,
+          "avg_per_hand": 0.0,
+          "biggest_win": 2
+        }
+      ]
+    }
+  ]
+}
