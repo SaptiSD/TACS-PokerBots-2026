@@ -530,11 +530,14 @@ class Player(Bot):
 
         # FOLD & EQUILIBRIUM DEFENSE
         if continue_cost > 0:
-            # MDF (Minimum Defense Frequency) Mixed Strategy on River against big bets
-            if street == 5 and self.opp_model.hands_played > 10:
+            is_shove = continue_cost > (my_stack * 0.4)
+            needs_mdf = not is_shove and self.opp_model.is_aggressive()
+
+            # MDF (Minimum Defense Frequency) Mixed Strategy on River against normal bets
+            if street == 5 and self.opp_model.hands_played > 10 and needs_mdf:
                 mdf = pot / max(1, pot + continue_cost)
                 # If hand is a bluff-catcher (moderate win rate), RNG call at MDF to prevent auto-profit bluffs
-                if 0.30 <= win_rate < 0.65:
+                if 0.35 <= win_rate < 0.65:
                     if random.random() < mdf * (win_rate / 0.5):
                         if CallAction in legal_actions:
                             return CallAction()
@@ -542,16 +545,23 @@ class Player(Bot):
                         if FoldAction in legal_actions:
                             return FoldAction()
 
-            # Deep Exploitative Fold Adj: Nits rarely bluff. Fold faster to aggression.
-            if self.opp_model.is_tight() and not self.opp_model.is_aggressive() and self.opp_model.hands_played > 15:
-                fold_threshold = pot_odds * 1.15
-            else:
-                fold_threshold = pot_odds * 0.85
-
-            if win_rate < fold_threshold:
-                if win_rate < 0.25 or continue_cost > my_stack * 0.3:
+            # The Over-Call Limit (Counter-Exploit for SPR Shoves)
+            if is_shove:
+                # Require >= 0.60 equity to call a massive overbet (Crushes 52% shove flaws)
+                if win_rate < 0.60:
                     if FoldAction in legal_actions:
                         return FoldAction()
+            else:
+                # Deep Exploitative Fold Adj: Nits rarely bluff. Fold faster to aggression.
+                if self.opp_model.is_tight() and not self.opp_model.is_aggressive() and self.opp_model.hands_played > 15:
+                    fold_threshold = pot_odds * 1.15
+                else:
+                    fold_threshold = pot_odds * 0.85
+
+                if win_rate < fold_threshold:
+                    if win_rate < 0.25 or continue_cost > my_stack * 0.3:
+                        if FoldAction in legal_actions:
+                            return FoldAction()
 
         # CHECK: when we can check and hand is marginal
         if continue_cost == 0 and CheckAction in legal_actions:
@@ -569,7 +579,13 @@ class Player(Bot):
         if RaiseAction in legal_actions:
             should_raise = False
             
-            if win_rate > 0.60:
+            if win_rate > 0.70 and continue_cost == 0:
+                # Induce SPR shoves from opponents by trapping with monster hands 20% of the time
+                if random.random() < 0.20:
+                    should_raise = False
+                else:
+                    should_raise = True
+            elif win_rate > 0.60:
                 should_raise = True
             elif win_rate > 0.50 and continue_cost == 0:
                 should_raise = random.random() < 0.60
