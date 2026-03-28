@@ -4,7 +4,7 @@ Baseline bot: always applies maximum pressure (all-in when possible).
 import os
 import sys
 
-sys.path.append(os.path.join(os.path.dirname(__file__), "..", "python_skeleton"))
+sys.path.append(os.path.join(os.path.dirname(__file__), "python_skeleton"))
 
 from skeleton.actions import CallAction, CheckAction, RaiseAction, RedrawAction
 from skeleton.bot import Bot

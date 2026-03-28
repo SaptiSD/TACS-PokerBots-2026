@@ -1,4 +1,4 @@
 {
     "build": [],
-    "run": ["python3", "player.py"]
+    "run": ["C:\\Users\\sapta\\Desktop\\TACS-PokerBots-2026\\.venv\\Scripts\\python.exe", "player.py"]
 }
