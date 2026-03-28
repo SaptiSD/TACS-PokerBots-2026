@@ -1,0 +1,19 @@
+============================================================
+  MATCHUP: rishabh_bot  vs  all_in_bot
+  Date: 2026-03-28 13:55:15
+============================================================
+
+  Hands played      : 1000
+  Winner            : all_in_bot
+
+  rishabh_bot            | all_in_bot
+  --------------------------------------------------
+  Total chips       : -3748  |  +3748
+  Hands won         : 0  |  1000  (ties: 0)
+  Win rate          : 0.0%  |  100.0%
+  Avg chips/hand    : -3.75  |  +3.75
+  Biggest single win: 0  |  250
+  Best win streak   : 0 hands
+  Worst loss streak : 1000 hands
+  Redraws used      : 0  |  104
+

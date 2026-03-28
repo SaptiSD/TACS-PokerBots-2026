@@ -1,0 +1,6 @@
+Starting Pokerbots engine...
+all_in_bot connected successfully
+heuristic_bot connected successfully
+all_in_bot disconnected
+Could not close socket connection with all_in_bot
+Writing ./statistics/tmp/gamelog.txt

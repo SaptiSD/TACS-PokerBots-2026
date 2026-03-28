@@ -8,9 +8,9 @@ GameState = namedtuple('GameState', ['bankroll', 'game_clock', 'round_num'])
 TerminalState = namedtuple('TerminalState', ['deltas', 'previous_state'])
 
 NUM_ROUNDS = 1000
-STARTING_STACK = 400
-BIG_BLIND = 2
-SMALL_BLIND = 1
+STARTING_STACK = 250
+BIG_BLIND = 5
+SMALL_BLIND = 2
 
 
 class RoundState(namedtuple('_RoundState', ['button', 'street', 'pips', 'stacks', 'hands', 'board', 'previous_state'])):

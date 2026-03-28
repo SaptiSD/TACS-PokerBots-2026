@@ -1,0 +1,19 @@
+============================================================
+  MATCHUP: all_in_bot  vs  heuristic_bot
+  Date: 2026-03-28 13:57:14
+============================================================
+
+  Hands played      : 1000
+  Winner            : heuristic_bot
+
+  all_in_bot             | heuristic_bot
+  --------------------------------------------------
+  Total chips       : -711  |  +711
+  Hands won         : 392  |  608  (ties: 0)
+  Win rate          : 39.2%  |  60.8%
+  Avg chips/hand    : -0.71  |  +0.71
+  Biggest single win: 5  |  5
+  Best win streak   : 2 hands
+  Worst loss streak : 9 hands
+  Redraws used      : 0  |  425
+

@@ -1,0 +1,110 @@
+=================================================================
+  OTHER BOTS ROUND-ROBIN SUMMARY
+=================================================================
+
+  RANK  BOT                    W-L-T       TOTAL CHIPS
+  -------------------------------------------------------
+  1     tight_bot              8-0-0           +10,034
+  2     heuristic_bot          7-1-0            +3,909
+  3     aggresive_botr         6-2-0           +18,804
+  4     all_in_bot             5-3-0           +12,258
+  5     maniac_bot             0-4-4            -8,789
+  6     check_call_bot         0-4-4            -8,937
+  7     passive_bot            0-4-4            -9,045
+  8     station_bot            0-4-4            -9,054
+  9     tag_bot                0-4-4            -9,180
+
+=================================================================
+  DETAILED RECORDS
+=================================================================
+
+  #1 tight_bot
+       W vs all_in_bot (+1303)
+       W vs heuristic_bot (+1163)
+       W vs aggresive_botr (+1223)
+       W vs check_call_bot (+1155)
+       W vs maniac_bot (+1140)
+       W vs passive_bot (+1350)
+       W vs station_bot (+1280)
+       W vs tag_bot (+1420)
+
+  #2 heuristic_bot
+       W vs all_in_bot (+711)
+       W vs aggresive_botr (+681)
+       L vs tight_bot (-1163)
+       W vs check_call_bot (+782)
+       W vs maniac_bot (+649)
+       W vs passive_bot (+695)
+       W vs station_bot (+784)
+       W vs tag_bot (+770)
+
+  #3 aggresive_botr
+       W vs all_in_bot (+3228)
+       L vs heuristic_bot (-681)
+       L vs tight_bot (-1223)
+       W vs check_call_bot (+3500)
+       W vs maniac_bot (+3500)
+       W vs passive_bot (+3500)
+       W vs station_bot (+3490)
+       W vs tag_bot (+3490)
+
+  #4 all_in_bot
+       L vs heuristic_bot (-711)
+       L vs aggresive_botr (-3228)
+       L vs tight_bot (-1303)
+       W vs check_call_bot (+3500)
+       W vs maniac_bot (+3500)
+       W vs passive_bot (+3500)
+       W vs station_bot (+3500)
+       W vs tag_bot (+3500)
+
+  #5 maniac_bot
+       L vs all_in_bot (-3500)
+       L vs heuristic_bot (-649)
+       L vs aggresive_botr (-3500)
+       L vs tight_bot (-1140)
+       T vs check_call_bot (+0)
+       T vs passive_bot (+0)
+       T vs station_bot (+0)
+       T vs tag_bot (+0)
+
+  #6 check_call_bot
+       L vs all_in_bot (-3500)
+       L vs heuristic_bot (-782)
+       L vs aggresive_botr (-3500)
+       L vs tight_bot (-1155)
+       T vs maniac_bot (+0)
+       T vs passive_bot (+0)
+       T vs station_bot (+0)
+       T vs tag_bot (+0)
+
+  #7 passive_bot
+       L vs all_in_bot (-3500)
+       L vs heuristic_bot (-695)
+       L vs aggresive_botr (-3500)
+       L vs tight_bot (-1350)
+       T vs check_call_bot (+0)
+       T vs maniac_bot (+0)
+       T vs station_bot (+0)
+       T vs tag_bot (+0)
+
+  #8 station_bot
+       L vs all_in_bot (-3500)
+       L vs heuristic_bot (-784)
+       L vs aggresive_botr (-3490)
+       L vs tight_bot (-1280)
+       T vs check_call_bot (+0)
+       T vs maniac_bot (+0)
+       T vs passive_bot (+0)
+       T vs tag_bot (+0)
+
+  #9 tag_bot
+       L vs all_in_bot (-3500)
+       L vs heuristic_bot (-770)
+       L vs aggresive_botr (-3490)
+       L vs tight_bot (-1420)
+       T vs check_call_bot (+0)
+       T vs maniac_bot (+0)
+       T vs passive_bot (+0)
+       T vs station_bot (+0)
+

@@ -1,0 +1,19 @@
+============================================================
+  MATCHUP: rishabh_bot  vs  heuristic_bot
+  Date: 2026-03-28 13:55:15
+============================================================
+
+  Hands played      : 1000
+  Winner            : heuristic_bot
+
+  rishabh_bot            | heuristic_bot
+  --------------------------------------------------
+  Total chips       : -769  |  +769
+  Hands won         : 386  |  613  (ties: 1)
+  Win rate          : 38.6%  |  61.3%
+  Avg chips/hand    : -0.77  |  +0.77
+  Biggest single win: 5  |  5
+  Best win streak   : 2 hands
+  Worst loss streak : 9 hands
+  Redraws used      : 0  |  413
+

@@ -1,0 +1,19 @@
+============================================================
+  MATCHUP: madhav_claudeide_bot  vs  heuristic_bot
+  Date: 2026-03-28 13:57:13
+============================================================
+
+  Hands played      : 1000
+  Winner            : heuristic_bot
+
+  madhav_claudeide_bot   | heuristic_bot
+  --------------------------------------------------
+  Total chips       : -659  |  +659
+  Hands won         : 400  |  599  (ties: 1)
+  Win rate          : 40.0%  |  59.9%
+  Avg chips/hand    : -0.66  |  +0.66
+  Biggest single win: 5  |  5
+  Best win streak   : 1 hands
+  Worst loss streak : 9 hands
+  Redraws used      : 0  |  424
+

@@ -1,0 +1,19 @@
+============================================================
+  MATCHUP: madhav_claudeide_bot  vs  aggresive_botr
+  Date: 2026-03-28 13:57:13
+============================================================
+
+  Hands played      : 1000
+  Winner            : aggresive_botr
+
+  madhav_claudeide_bot   | aggresive_botr
+  --------------------------------------------------
+  Total chips       : -3490  |  +3490
+  Hands won         : 1  |  999  (ties: 0)
+  Win rate          : 0.1%  |  99.9%
+  Avg chips/hand    : -3.49  |  +3.49
+  Biggest single win: 5  |  5
+  Best win streak   : 1 hands
+  Worst loss streak : 546 hands
+  Redraws used      : 0  |  132
+

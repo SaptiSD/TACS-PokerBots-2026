@@ -1,0 +1,4 @@
+Starting Pokerbots engine...
+all_in_bot connected successfully
+tag_bot run failed - check "run" in commands.json
+Writing ./statistics/tmp/gamelog.txt
