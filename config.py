@@ -1,10 +1,10 @@
 # PARAMETERS TO CONTROL THE BEHAVIOR OF THE GAME ENGINE
 # DO NOT REMOVE OR RENAME THIS FILE
-PLAYER_1_NAME = "A"
+PLAYER_1_NAME = "madhav"
 # Point each player path at a Python bot directory with commands.json
-PLAYER_1_PATH = "./check_call_bot"
+PLAYER_1_PATH = "./madhav_claudeide_bot"
 # NO TRAILING SLASHES ARE ALLOWED IN PATHS
-PLAYER_2_NAME = "B"
+PLAYER_2_NAME = "check_call"
 PLAYER_2_PATH = "./check_call_bot"
 # GAME PROGRESS IS RECORDED HERE
 GAME_LOG_FILENAME = "gamelog"
@@ -24,4 +24,4 @@ STARTING_STACK = 250
 BIG_BLIND = 5
 SMALL_BLIND = 2
 
-PLAYER_TIMEOUT =180
+PLAYER_TIMEOUT = 180
