@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/Users/rishabh/Documents/sapti-pokerbot/heuristic_bot/player.py", line 322, in <module>
+    run_bot(Player(), parse_args())
+  File "/Users/rishabh/Documents/sapti-pokerbot/heuristic_bot/skeleton/runner.py", line 195, in run_bot
+    runner.run()
+  File "/Users/rishabh/Documents/sapti-pokerbot/heuristic_bot/skeleton/runner.py", line 123, in run
+    round_state = self._apply_action_clause(round_state, clause)
+  File "/Users/rishabh/Documents/sapti-pokerbot/heuristic_bot/skeleton/runner.py", line 79, in _apply_action_clause
+    return round_state.proceed(action)
+  File "/Users/rishabh/Documents/sapti-pokerbot/heuristic_bot/skeleton/states.py", line 202, in proceed
+    hands[active][target_index] = '??'
+IndexError: list assignment index out of range

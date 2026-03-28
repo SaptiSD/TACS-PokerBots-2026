@@ -1,0 +1,6 @@
+Starting Pokerbots engine...
+rishabh_bot connected successfully
+heuristic_bot connected successfully
+heuristic_bot disconnected
+Could not close socket connection with heuristic_bot
+Writing ./statistics/tmp/gamelog.txt
