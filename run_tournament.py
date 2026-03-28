@@ -46,9 +46,9 @@ def write_config(bot1, bot2):
     config = f"""# PARAMETERS TO CONTROL THE BEHAVIOR OF THE GAME ENGINE
 # DO NOT REMOVE OR RENAME THIS FILE
 PLAYER_1_NAME = "{bot1}"
-PLAYER_1_PATH = "./{bot1}/skeleton"
+PLAYER_1_PATH = "./{bot1}"
 PLAYER_2_NAME = "{bot2}"
-PLAYER_2_PATH = "./{bot2}/skeleton"
+PLAYER_2_PATH = "./{bot2}"
 GAME_LOG_FILENAME = "gamelog"
 RESULTS_DIR = "./statistics/tmp"
 PLAYER_LOG_SIZE_LIMIT = 524288

@@ -1,9 +1,9 @@
 # PARAMETERS TO CONTROL THE BEHAVIOR OF THE GAME ENGINE
 # DO NOT REMOVE OR RENAME THIS FILE
 PLAYER_1_NAME = "rishabh_bot"
-PLAYER_1_PATH = "./rishabh_bot/skeleton"
-PLAYER_2_NAME = "check_call_bot"
-PLAYER_2_PATH = "./check_call_bot/skeleton"
+PLAYER_1_PATH = "./rishabh_bot"
+PLAYER_2_NAME = "SaptiBot"
+PLAYER_2_PATH = "./SaptiBot"
 GAME_LOG_FILENAME = "gamelog"
 RESULTS_DIR = "./statistics/tmp"
 PLAYER_LOG_SIZE_LIMIT = 524288
